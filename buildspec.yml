@@ -20,3 +20,4 @@ artifacts:
       files:
         - appspec.yml
         - target/myapp-1.0.0.jar
+        - scripts/
