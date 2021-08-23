@@ -18,5 +18,5 @@ phases:
         - echo "Build Stage Completed..."
 artifacts:
       files:
-        - appspec.yaml
+        - appspec.yml
         - target/myapp-1.0.0.jar
