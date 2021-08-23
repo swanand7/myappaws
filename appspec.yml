@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: target/myapp-1.0.0.jar
+    destination: /opt/deploy/
+file_exists_behavior: OVERWRITE
+
+hooks:
+  ApplicationStop:
+    - location: scripts\stop-server.sh
+      timeout: 300
+
+  BeforeInstall:
+    - location: scripts\before-install.sh
+      timeout: 300  
+
+  ApplicationStart:
+    - location: scripts\start-server.sh
+      timeout: 300

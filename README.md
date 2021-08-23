@@ -1,1 +1,2 @@
-# myappaws
+# myapp
+Spring Boot application code

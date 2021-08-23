@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+    install:
+      java: corretto11
+    pre_build:
+      commands:
+        - echo "Entered into Pre-Build Stage..."
+        - echo "Cleaning the previous build..."
+        - mvn clean
+        - echo "Pre-Build Stage Complete..."
+    build:
+      commands:
+        - echo "Entered into Build Stage...
+        - echo "Building Package"
+        - mvn test
+        - mvn package
+        - echo "Build Stage Completed..."
+artifacts:
+      files:
+        - appspec.yaml
+        - target/myapp-1.0.0.jar
