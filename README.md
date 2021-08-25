@@ -1,2 +1,2 @@
 # myapp
-Spring Boot application code....
+Spring Boot application code
